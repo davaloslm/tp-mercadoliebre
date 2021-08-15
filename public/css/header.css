@@ -1,0 +1,54 @@
+header{
+    background-color: var(--amarillo);
+
+}
+
+header img.logo{
+    width: 40%;
+    margin: 20px 30px;
+
+}
+
+header div.search{
+    margin-left: 20px;
+}
+
+header div form button{
+    display: block;
+}
+
+header div.cuotas{
+    text-align: center;
+    margin: 20px 0px;
+    
+}
+
+header nav ul.list1{
+    margin-bottom: 20px;
+}
+
+header nav ul li{
+    list-style: none;
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+header nav div.burger-menu{
+    text-align: center;
+}
+
+header nav div.burger-menu i{
+    
+    color: white;
+    background-color: var(--celeste);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px 20px
+}
+
+
