@@ -11,6 +11,11 @@ header img.logo{
 
 header div.search{
     margin-left: 20px;
+    
+}
+
+header div form input{
+    width: 60%;
 }
 
 header div form button{
