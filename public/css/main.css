@@ -1,3 +1,6 @@
+main{
+    background-color: var(--grisClaro);
+}
 main section article img {
     width: 100%;
 }
