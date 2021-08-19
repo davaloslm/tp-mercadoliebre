@@ -1,22 +1,67 @@
 main{
-    background-color: var(--grisClaro);
+    width: 90%;
+    margin: 0px auto;
 }
+
+main section article{
+    margin: 10px 0px;
+    background-color: white;   
+
+}
+
+main section article div{
+    border-top:  solid 1px var(--grisClaro);
+    padding: 15px;
+}
+
 main section article img {
     width: 100%;
 }
 main img.banner{
     width: 100%;
-    
-
+    display: none;
 }
+
 main section h3.titulares{
     font-size: 24px;
 }
 
-main section article p.precios{
-    font-size: 18px;
+main section article div i{
+    color:  var(--verde);
+    border: solid 1px var(--verde);
+    border-radius: 100%;    
+    padding: 3px  12px 12px 3px;
 }
 
-main section article h4, main section article p.descuentos{
+main section article p.precios{
+    font-size: 18px;
+    
+}
+
+main section article p.descuentos{
     font-size: 16px;
+    color: var(--verde);    
+}
+
+main section article h4{
+    font-size: 16px;
+    font-weight: normal;
+    display: none;
 } 
+
+@media (min-width: 361px){
+
+main img.banner{
+    display: block;
+}
+
+
+main section article h4 {
+    display: block;
+}
+
+main section article{
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+}

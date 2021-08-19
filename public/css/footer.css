@@ -1,11 +1,22 @@
+footer{
+    background-color: white;
+    padding-top: 10px;
+    }
+
 footer section{
     text-align: center;
-    margin: 40px 30px;
+    margin: 40px 30px ;
 
 }
 
 footer section i{
-    font-size: 24px;
+    font-size: 2em;
     color: var(--celeste);
+   
+}
+
+footer span{
+    display: block;
+    margin-top: 20px;
 }
 
