@@ -3,6 +3,12 @@ main{
     margin: 0px auto;
 }
 
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 main section article{
     margin: 10px 0px;
     background-color: white;   
@@ -12,6 +18,10 @@ main section article{
 main section article div{
     border-top:  solid 1px var(--grisClaro);
     padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline ;
 }
 
 main section article img {
@@ -24,23 +34,34 @@ main img.banner{
 
 main section h3.titulares{
     font-size: 24px;
+    width: 100%;
 }
 
 main section article div i{
-    color:  var(--verde);
-    border: solid 1px var(--verde);
-    border-radius: 100%;    
-    padding: 3px  12px 12px 3px;
+    display: block ;
+    color: var(--verde);
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid var(--verde) ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute ;
+    right: 20px ;
+    top: -15px ;
 }
 
-main section article p.precios{
+main section article div p.precio{
     font-size: 18px;
+    width: 30%;
     
 }
 
-main section article p.descuentos{
+main section article div p.descuentos{
     font-size: 16px;
-    color: var(--verde);    
+    color: var(--verde); 
+    width: 70%;   
 }
 
 main section article h4{
@@ -51,17 +72,33 @@ main section article h4{
 
 @media (min-width: 361px){
 
-main img.banner{
+    main img.banner{
     display: block;
 }
 
 
-main section article h4 {
+    main section article h4 {
     display: block;
 }
 
-main section article{
+    main section article{
     box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    width: 45%;
 }
+
+main section article div p.descuentos{
+    text-align: end;
+}
+
+
+
+
+}
+
+@media(min-width: 769px){
+    main section article{
+        width: 22%;
+    }
+
 
 }
