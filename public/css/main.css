@@ -6,7 +6,7 @@ main{
 main section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 main section article{
@@ -27,14 +27,12 @@ main section article div{
 main section article img {
     width: 100%;
 }
-main img.banner{
-    width: 100%;
-    display: none;
-}
+
 
 main section h3.titulares{
     font-size: 24px;
     width: 100%;
+    margin: 15px 0;
 }
 
 main section article div i{
@@ -72,13 +70,12 @@ main section article h4{
 
 @media (min-width: 361px){
 
-    main img.banner{
-    display: block;
-}
+    
 
 
     main section article h4 {
     display: block;
+    margin-top: 15px;
 }
 
     main section article{

@@ -3,27 +3,52 @@ header{
 
 }
 
+header div.header{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
 header img.logo{
-    width: 40%;
-    margin: 20px 30px;
+    width: 50%;
+    padding: 10px;
 
 }
 
 header div.search{
-    margin-left: 20px;
+    width: 50%;
+    padding: 10px;
+    align-self: center;
+    
     
 }
 
+header div.search form{
+    position: relative;
+}
+
 header div form input{
-    width: 60%;
+    border-radius: 5px;
+    border: none;
+    line-height: 35px;
+    width: 85%;
 }
 
 header div form button{
-    display: block;
+    display: inline-block;
+    border: none;
+    line-height: 35px;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+    width: 20px;
+    position: absolute;
+    right: 5%;
 }
 
 header div.cuotas{
     text-align: center;
+    width: 100%;
     margin: 20px 0px;
     
 }
@@ -34,6 +59,8 @@ header nav ul.list1{
 
 header nav ul li{
     list-style: none;
+    text-align: center;
+    margin: 0 5px;
 
 }
 
@@ -60,17 +87,106 @@ header nav ul{
     display:none
 }
 
+header img.banner{
+    width: 100%;
+    display: none;
+}
+
 
 @media (min-width: 361px){
 
-    header nav ul{
-        display:block
+    header div.header{
+        justify-content: space-evenly;
+        padding: 20px 0;
     }
+
+    header img.logo{
+        width: 30%;
+        padding: 0;
+    
+    }
+    
+    header div.search{
+    width: 30%;
+    padding: 10px;
+    align-self: center;
+    }
+
+    header div.search form{
+        position: relative;
+    }
+        
+    header div form input{
+        border-radius: 0;
+        border: 1px solid black;
+        line-height: 16px;
+        width: 80%;
+    }
+        
+    header div form button{
+        display: inline-block;
+        border: 1px solid black;
+        line-height: 16px;
+        background-color: white;
+        border-radius: 0;
+        width: auto;
+        position: static;
+        right: 0;
+    }
+
+    header div.cuotas{
+        text-align: center;
+        width: 30%;
+        margin: 20px 0px;
+        align-self: center;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    header nav ul{
+        display:flex;
+        
+    }
+
+    header nav ul.list1{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin: 0 0 15px 0;
+
+    }
+
+    header nav ul.list2{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 0 0 15px 0;
+
+    }
+
 
     header div.burger-menu{
         display: none;
     }
-
     
+    header img.banner{
+        display: block;
+    }
 
+}
+
+@media (min-width:769px){
+    header nav ul li{
+    list-style: none;
+    text-align: center;
+    margin: 0 10px;}
+    
 }
