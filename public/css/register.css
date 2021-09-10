@@ -1,0 +1,61 @@
+main.register section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main.register section h2{
+    font-size: 24px;
+}
+
+main.register section form div.datos input{
+    border-radius: 5px;
+    border: none;
+    line-height: 35px;
+    width: 100%;
+    padding-left: 5px;
+    margin: 15px 0;
+}
+
+main.register section form div.perfil{
+    display: flex;
+    margin: 15px 0; 
+}
+main.register section form div.perfil input:last-of-type{
+    margin-left: 5px
+}
+
+main.register section form div.intereses{
+    display: flex;
+    margin: 15px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+main.register section form div.intereses div{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+main.register section form div.intereses div:last-child{
+    margin-bottom: 0;
+}
+
+main.register section form div.foto{
+    margin: 15px 0;
+}
+
+main.register section form div.foto small{
+    font-size: 10px;
+}
+
+main.register section form div.botones{
+    margin: 15px auto;
+}
+
+main.register section form div.botones button{
+    color: white;
+    background-color: var(--celeste);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
