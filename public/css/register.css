@@ -5,6 +5,7 @@ main.register section {
 
 main.register section h2{
     font-size: 24px;
+    margin-top: 15px;
 }
 
 main.register section form div.datos input{
@@ -58,4 +59,11 @@ main.register section form div.botones button{
     border: none;
     border-radius: 5px;
     padding: 5px;
+}
+
+@media(min-width:361px){
+    main.register section {
+        max-width: 60%;
+    }
+
 }
