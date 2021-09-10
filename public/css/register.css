@@ -47,6 +47,8 @@ main.register section form div.foto{
 
 main.register section form div.foto small{
     font-size: 10px;
+    color: var(--grisOscuro);
+    display: block;
 }
 
 main.register section form div.botones{
