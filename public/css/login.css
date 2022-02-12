@@ -26,6 +26,10 @@ main.login section form button{
     line-height: 35px;
     margin: 20px 0;
 }
+main.login section form button:hover{
+    background-color: #0022AA;
+    transition: 1s;
+}
 
 @media(min-width:361px){
     main.login section {

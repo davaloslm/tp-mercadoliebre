@@ -15,8 +15,34 @@ footer section i{
    
 }
 
+footer section i:hover{
+    color: var(--amarillo);
+    transition: .5s;
+   
+}
+
 footer span{
     display: block;
     margin-top: 20px;
 }
 
+@media(min-width: 769px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    footer section{
+        width: 25%;
+    }
+
+    footer span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+   
+}
