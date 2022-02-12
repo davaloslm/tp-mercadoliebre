@@ -50,6 +50,11 @@
     top: -15px ;
 }
 
+.home main section article div i:hover{
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+
 .home main section article div p.precio{
     font-size: 18px;
     width: 30%;
@@ -75,12 +80,17 @@
 
     .home main section article h4 {
     display: block;
-    margin-top: 15px;
+    margin: 10px;
 }
 
     .home main section article{
     box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
     width: 45%;
+}
+
+    .home main section article:hover{
+    box-shadow : 0px 0px 30px rgb( 100 , 100 , 100 );
+    transition: 1s;
 }
 
 .home main section article div p.descuentos{
@@ -97,5 +107,13 @@
         width: 22%;
     }
 
+    .home main section article  h4{
+        opacity: 0;
+    }
+
+    .home main section article  img:hover~h4{
+        opacity: 100;
+        transition: 1s;
+    }
 
 }
